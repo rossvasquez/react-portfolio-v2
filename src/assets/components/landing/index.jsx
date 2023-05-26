@@ -32,7 +32,7 @@ function Landing() {
                 </div>
                 </MouseParallaxChild>
                 <MouseParallaxChild factorX={0.2} factorY={0.2} className='absolute top-0 left-0'>
-                    <img src={landingBack} className='w-screen scale-[550%] sm:scale-[300%] md:scale-[200%] lg:scale-150 z-10 opacity-5' />
+                    <img src={landingBack} className='w-screen scale-[550%] sm:scale-[300%] md:scale-[200%] lg:scale-150 z-10 opacity-10' />
                 </MouseParallaxChild>
                 <div className="absolute z-20 bg-white h-40 w-screen shadow-md -bottom-16 sm:-bottom-28 scale-[200%] rotate-[172deg] right-0"></div>
                 <div className="absolute z-20 bg-accent h-20 w-screen shadow-md bottom-14 sm:bottom-2 scale-[200%] rotate-[178deg] right-0"></div>
