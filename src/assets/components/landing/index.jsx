@@ -22,7 +22,7 @@ function Landing() {
                         <li className="pb-1 md:pb-2 overflowLanding">React/Vue</li>
                         <li className="pb-1 md:pb-2 overflowLanding">Tailwind</li>
                     </ul>
-                    <div className='h-auto w-[.1rem] bg-deep ml-5 mr-6'></div>
+                    <div className='h-auto w-[.35rem] bg-deep ml-5 mr-6'></div>
                     <ul>
                         <li className="pb-1 md:pb-2 overflowLanding">API/SDK</li>
                         <li className="pb-1 md:pb-2 overflowLanding">NoSQL</li>
