@@ -1,5 +1,6 @@
 import landingBack from '../../static/landingBack.png'
 import me from '../../static/me.png'
+import meBack from '../../static/meBack.png'
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 
@@ -35,8 +36,11 @@ function Landing() {
                 </MouseParallaxChild>
                 <div className="absolute z-20 bg-white h-40 w-screen shadow-md -bottom-28 scale-[200%] rotate-[172deg] right-0"></div>
                 <div className="absolute z-20 bg-accent h-20 w-screen shadow-md bottom-2 scale-[200%] rotate-[178deg] right-0"></div>
-                <div className="absolute z-20 bg-deep h-40 w-screen shadow-md -bottom-32 scale-[200%] rotate-[175deg] right-0"></div>
-                <MouseParallaxChild factorX={0.8} factorY={0.4} className='absolute bottom-5 sm:bottom-1 right-0 md:right-6 lg:right-24 xl:right-32 z-20'>
+                <div className="absolute z-20 bg-deep h-40 w-screen shadow-md -bottom-32 scale-[200%] rotate-[175deg] right-0 z-30"></div>
+                <MouseParallaxChild factorX={0.5} factorY={0.3} className='absolute bottom-8 sm:bottom-1 right-0 md:right-6 lg:right-24 xl:right-32 z-20'>
+                    <img src={meBack} className='scale-[98%] w-[24rem] md:w-[28rem] 2xl:w-[32rem]' />
+                </MouseParallaxChild>
+                <MouseParallaxChild factorX={1} factorY={0.6} className='absolute bottom-5 sm:bottom-1 right-0 md:right-6 lg:right-24 xl:right-32 z-40'>
                     <img src={me} className='w-[24rem] md:w-[28rem] 2xl:w-[32rem]' />
                 </MouseParallaxChild>
             </div>
