@@ -21,17 +21,17 @@ function Landing() {
 
     const MyImage = () =>
     <>
-    <MouseParallaxChild factorX={0.5} factorY={0.3} className='absolute bottom-14 sm:bottom-4 right-0 md:right-4 lg:right-6 z-30'>
-        <img src={meBack} className='scale-[98%] w-[24rem] md:w-[28rem] 2xl:w-[32rem] z-30' />
+    <MouseParallaxChild factorX={0.5} factorY={0.3} className='absolute bottom-4 right-10 md:right-4 lg:right-6 z-30'>
+        <img src={meBack} className='scale-[98%] w-[18rem] md:w-[28rem] 2xl:w-[32rem] z-30' />
     </MouseParallaxChild>
-    <MouseParallaxChild factorX={1} factorY={0.6} className='absolute bottom-14 sm:bottom-4 right-0 md:right-4 lg:right-6 z-50'>
-        <img src={me} className='w-[24rem] md:w-[28rem] 2xl:w-[32rem] z-50' />
+    <MouseParallaxChild factorX={1} factorY={0.6} className='absolute bottom-4 right-10 md:right-4 lg:right-6 z-40'>
+        <img src={me} className='w-[18rem] md:w-[28rem] 2xl:w-[32rem] z-50' />
     </MouseParallaxChild>
     </>
 
     return (
         <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} resetOnLeave={true} className='relative h-screen w-screen'>
-            <div className="relative p-4 h-screen w-screen bg-gradient-to-bl from-deep via-shallow to-shallow">
+            <div className="relative p-2 md:p-4 h-auto min-h-[100vh] w-screen bg-gradient-to-bl from-deep via-shallow to-shallow">
                 <Background />
                 <Blurb />
                 <BottomDivs />
