@@ -8,14 +8,19 @@ function Cards() {
     const top = useRef(null);
 
     async function scrollNGo(i) {
-        await top.current.scrollIntoView({ behavior: 'smooth' });
+        const rect  = top.current.getBoundingClientRect()
+        const newToppa = rect.top - 6
+        window.scrollTo({ 
+            top: window.scrollY + newToppa,
+            behavior: 'smooth' 
+        });
         setShowProject(i);
 
     }
 
     const MappedProj = () =>
     projectInfo.map((item, i) => 
-        <div className='flex flex-col p-3 md:p-4 justify-center items-center h-auto w-auto rounded-md shadow-md bg-shallow hover:shadow-xl'>
+        <div key={i} className='flex flex-col p-3 md:p-4 justify-center items-center h-auto w-auto rounded-md shadow-md bg-shallow hover:shadow-xl'>
             <div className='relative h-full w-full pb-14'>
                 <img className='h-auto w-full rounded-md mb-3 md:mb-4' src={item.image} />
                 <div className='h-auto w-auto bg-deep rounded-lg shadow-inner'>
@@ -23,8 +28,8 @@ function Cards() {
                     <div className='h-[.05rem] bg-accent mt-4 opacity-80'></div>
                     <p className='px-4 w-full text-center text-2xl text-white font-body mt-4 pb-4'>{item.description}</p>
                 <div className='flex flex-row flex-wrap justify-center items-center w-11/12 mx-auto h-auto mb-5 md:mb-6 pb-4'>
-                    {item.tech.map((item) =>
-                        <div className='flex flex-row items-center rounded-full py-1 px-2 bg-shallow w-auto my-2 mx-1 shadow-md'>
+                    {item.tech.map((item, i) =>
+                        <div key={i} className='flex flex-row items-center rounded-full py-1 px-2 bg-shallow w-auto my-2 mx-1 shadow-md'>
                             <div className='w-9 h-9 overflow-hidden flex justify-center items-center rounded-full bg-transparent'>
                                 <img src={item.logo} className='h-3/5 w-auto'/>
                             </div>
@@ -92,7 +97,7 @@ function Cards() {
                 <a href='https://cute-faloodeh-6ba98e.netlify.app' target='_blank'><div className='w-full h-16 bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
                 <a href='https://github.com/rossvasquez/zmariks-site-redesign' target='_blank'><div className='w-full h-16 bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
             </div>
-            <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-4 sm:top-6 w-24 hover:opacity-80 h-12 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
+            <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
     </div>
 
@@ -139,7 +144,7 @@ function Cards() {
                 <a href='https://www.michaelhenterfoundation.org' target='_blank'><div className='w-full h-16 bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
                 <a href='https://github.com/rossvasquez/mh-foundation-react' target='_blank'><div className='w-full h-16 bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
             </div>
-            <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-4 sm:top-6 w-24 hover:opacity-80 h-12 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
+            <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
     </div>
 
@@ -153,7 +158,7 @@ function Cards() {
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Stack</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>Utilized React and Tailwind to build the application. Hosted it on Netlify. Purchased Google Domain.</p>
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Solution</p>
-            <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-4 sm:top-6 w-24 hover:opacity-80 h-12 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
+            <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
     </div>
 
@@ -167,7 +172,7 @@ function Cards() {
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Stack</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>Utilized React and Tailwind to build the application. Hosted it on Netlify. Purchased Google Domain.</p>
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Solution</p>
-            <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-4 sm:top-6 w-24 hover:opacity-80 h-12 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
+            <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
     </div>
 

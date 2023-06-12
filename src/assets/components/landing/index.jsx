@@ -9,7 +9,7 @@ function Landing() {
 
     const Background = () =>
     <MouseParallaxChild factorX={-0.2} factorY={-0.2} className='absolute top-0 left-0'>
-        <img src={landingBack} className='w-screen scale-[550%] sm:scale-[300%] md:scale-[200%] lg:scale-150 z-10 opacity-10' />
+        <img src={landingBack} className='w-screen scale-[500%] sm:scale-[300%] md:scale-[200%] lg:scale-150 z-10 opacity-10' />
     </MouseParallaxChild>
 
     const BottomDivs = () =>
