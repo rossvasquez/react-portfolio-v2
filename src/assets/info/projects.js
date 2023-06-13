@@ -18,6 +18,11 @@ import eventbriteLogo from '../static/eventbriteLogo.png'
 import postgreLogo from '../static/postgreLogo.png'
 import emailLogo from '../static/emailLogo.png'
 import pdflibLogo from '../static/pdflibLogo.png'
+import nuxtLogo from '../static/nuxtLogo.svg'
+import midjourneyLogo from '../static/midjourneyLogo.png'
+import fontawesomeLogo from '../static/fontawesomeLogo.png'
+import nosqlLogo from '../static/nosqlLogo.png'
+import photoshopLogo from '../static/photoshopLogo.png'
 
 
 const projectInfo = [
@@ -43,6 +48,14 @@ const projectInfo = [
                 logo: netlifyLogo,
                 name: 'Netlify'
             },
+            {
+                logo: midjourneyLogo,
+                name: 'Midjourney'
+            },
+            {
+                logo: photoshopLogo,
+                name: 'Photoshop'
+            }
         ]
     },
     {
@@ -61,6 +74,10 @@ const projectInfo = [
             {
                 logo: tailwindLogo,
                 name: 'Tailwind'
+            },
+            {
+                logo: photoshopLogo,
+                name: 'Photoshop'
             },
             {
                 logo: supabaseLogo,
@@ -114,8 +131,24 @@ const projectInfo = [
                 name: 'Vue'
             },
             {
+                logo: nuxtLogo,
+                name: 'Nuxt3'
+            },
+            {
                 logo: tailwindLogo,
                 name: 'Tailwind'
+            },
+            {
+                logo: fontawesomeLogo,
+                name: 'Font Awesome'
+            },
+            {
+                logo: midjourneyLogo,
+                name: 'Midjourney'
+            },
+            {
+                logo: photoshopLogo,
+                name: 'Photoshop'
             },
             {
                 logo: supabaseLogo,
@@ -151,6 +184,14 @@ const projectInfo = [
             {
                 logo: firebaseLogo,
                 name: 'Firebase'
+            },
+            {
+                logo: nosqlLogo,
+                name: 'NoSQL'
+            },
+            {
+                logo: photoshopLogo,
+                name: 'Photoshop'
             }
         ]
     },

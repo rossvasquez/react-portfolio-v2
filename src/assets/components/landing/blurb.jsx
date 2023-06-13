@@ -31,7 +31,7 @@ export default function Blurb() {
     </>
 
     const Skills = () =>
-    <div className='bg-deep relative p-4 rounded-xl shadow-xl h-auto max-w-sm md:max-w-none w-full md:w-fit flex flex-col font-body mt-3 md:mt-6 uppercase text-xl md:text-3xl shadowSkills text-white z-50'>
+    <div className='bg-deep relative p-4 rounded-xl shadow-md h-auto max-w-sm md:max-w-none w-full md:w-fit flex flex-col font-body mt-3 md:mt-6 uppercase text-xl md:text-3xl shadowSkills text-white z-50'>
             <p className='font-header text-accent mb-3 hidden md:block'>Skills</p>
             <div className='hidden xl:flex flex-row h-auto w-auto'>
                 <ul>
