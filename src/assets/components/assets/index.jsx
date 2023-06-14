@@ -19,14 +19,6 @@ import Photo16 from '../../static/gd/Photo16.jpg'
 
 
 export default function Assets() {
-
-    let imgRender = []
-
-    for (let i=1;i<17;i++) {
-        imgRender.push(i)
-    }
-
-    console.log(imgRender)
    
     return (
         <div className="relative w-screen h-auto bg-deep">
@@ -37,9 +29,22 @@ export default function Assets() {
                             columnsCountBreakPoints={{750: 2, 900: 3}}
                         >
                             <Masonry>
-                                {imgRender.map((item) => 
-                                <img key={item} className='m-2 rounded-sm shadow-md' src={item === 3 ? `src/assets/static/gd/Photo${item}.png` : `src/assets/static/gd/Photo${item}.jpg`} />
-                                )}
+                                <img className='m-2 rounded-sm shadow-md' src={Photo16} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo1} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo2} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo3} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo4} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo6} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo7} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo14} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo8} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo9} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo10} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo5} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo11} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo12} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo13} />
+                                <img className='m-2 rounded-sm shadow-md' src={Photo15} />
                             </Masonry>
                         </ResponsiveMasonry>
                     </div> 

@@ -57,7 +57,7 @@ function Cards() {
                     )}
                 </div>
                 </div>
-                <div onClick={() => scrollNGo(i)} className='absolute bottom-0 w-full h-16 rounded-md bg-accent flex justify-center items-center text-[1.8rem] text-deep font-body font-light uppercase hover:cursor-pointer hover:text-[1.82rem] hover:text-shallowb transition-all duration-200 hover:border-2 border-white'>learn more</div>
+                <div onClick={() => scrollNGo(i)} className='absolute bottom-0 w-full h-16 rounded-md bg-accent flex justify-center items-center text-[1.8rem] text-deep font-body font-light uppercase hover:cursor-pointer hover:text-[1.82rem] hover:text-shallowb transition-all duration-200 hover:pb-[.1rem] hover:border-2 border-white'>learn more</div>
             </div>
         </div>
 
@@ -226,35 +226,32 @@ function Cards() {
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Mission</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                After losing a longtime friend and teammate to Marfan Syndrome I saw an opportunity
-                to both relieve some of the stress of those grieveing and put my passion/skills into something real. The family
-                wanted a foundation site that serves as a place to stay up to date on foundation news, shop for foundation products,
-                view foundation events, and have donation capabilties.
+            Z'Mariks, a fast-casual restaurant located in the heart of Iowa City averages roughly two and a half catering orders per-day. Most of these orders come from University of Iowa Athletic, Academic, or Medical offices. The current system in place for receiving catering orders consists of:
+            <br/><br/>
+            1. Customer calls the restaurant after being instructed to do so on Z'Mariks website.<br/>
+            2. Manager recieves call and instructs customer to send email with catering information.<br/>
+            3. Customer sends email with order information.<br/>
+            4. Manager hand-writes order information onto Catering Form.<br/>
+            5. Manager enters catering information into Point of Sale System on the day of the order.<br/>
+            <br/>
+            The current methods often require several conversations by phone and e-mail between the customer and the store to achieve a single order. The various aspects of the current methods waste time and energy for both parties.
             </p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Stack</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                The foundation site utilizes React and Tailwind on the frontend. I am using React Router with Netlify redirects to
-                simulate traditional multi-page functionality. Utilizing Supabase, I have created various PostgreSQL tables for data storage
-                as well as buckets for image storage. Employing the API offerings of Printify, PayPal, EmailJS, and Eventbrite I have been able meet
-                project requirements. Since Supabase offers RLS, I call on it directly from the client with useEffect. To safely use the other API integrations,
-                I have created Netlify Functions (AWS Lambda) with NodeJS to gather data and then hit the endpoints from the client. Utilzing supabase I have captured
-                information at the transaction of most features to store data and make it viewable from the Admin Area. I also implemented the ability to create
-                blog posts that include images as well as hot links via LinkifyJS. EmailJS has provided the capability to send templated Email's to users, highlighted
-                in the donation section, where in conjuction with PDF-Lib; emails are sent with Reciepts of Charitable Donation in comliance with Federal Regulations.       
+                To properly learn, I took on this project with only HTML, CSS, and Vanilla Javascript. It utilizes localStorage to track user information
+                through the cart and checkout process. Firebase Realtime Database stores data on order completion where it is viewable from an admin dashboard. I wrote
+                a boatload of CSS making this responsive as well as building out all of the components, having now used Tailwind, it is tough to look back on.       
             </p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Result</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                <span>
-                    The site hits all of the requirements. Currently it is password protected (mhf2023$) and without PayPal so features can be tested. I think
-                    the coolest feature is the donation flow and the email/recepit generation from user info.
-                    I am currently resolving some API issues with Printify relating to the abilities of their Web Front to publish products. They make it
-                    so that if you GET product data and POST orders via API (using PayPal to capture payment), you revoke the ability to publish products
-                    from Prinify's Web Front Catalog, they get stuck with status publishing, yet are still readable via API. Rather than re-build Printify in the Admin Area via endpoints, I believe
-                    I have procurred a solution. I will create a Lambda that triggers when products are added, checks product status, pulls product info if status is publishing,
-                    and finally uses the publish endpoint. Why, why can't their publish button just do this? Ah well, guess that's how it goes in this realm. 
-                </span>
+                A full blown e-commerce solution was ultimately achieved. Wanting to take the project to the next level for production, I reached
+                out to our Point-of-Sale company, Toast. Unfortunately, the tier our Restuarant is on only grants us read access via their API. This means
+                I can't do things I had planned, such as cron-jobs to send orders to the terminals when orders are due. I can still use PDF-Lib to send emails of the order to
+                management, but the vision of orders going directly to the POS was largely an aspect of the potential autonomy and ease of this application. When you
+                consider things like payment processing and the fact you still have to punch the order in the POS. Regardless, it was a great learning opportunity and 
+                good real world practice.
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
                 <a href='https://www.michaelhenterfoundation.org' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
