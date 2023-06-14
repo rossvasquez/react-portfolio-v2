@@ -78,7 +78,7 @@ export default function About() {
                 </div>
                 <div ref={topOfCard} className="relative h-auto w-full bg-shallow shadow-lg rounded-lg pb-[7.8rem] pt-2 md:pt-6 px-2 md:px-6">
                     {AboutIndex === 0 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 -mb-[7.2rem] md:-mb-[6.4rem] rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 -mb-[7.2rem] md:-mb-[6.2rem] rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             Software Developer currently residing in Iowa City, IA. I am a <span className="font-header -mx-1 text-accent">passionate problem solver</span> who enjoys leveraging web
                             technology to create user experiences that make life easier. I am a Certified Salesforce Administrator whose interest in
                             Salesforce-to-Web led to me finding my purpose in <span className="font-header -mx-1 text-accent">Web Development</span>. I previously attended The Tippie College of Business, studying Marketing
@@ -90,7 +90,7 @@ export default function About() {
                     }
 
                     {AboutIndex === 1 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             Born in Des Moines, Iowa in 1999. I've grown up with an <span className="font-header -mx-1 text-accent">adoration for technology</span>. Having only known a life with computers, I cherish the unique experience to have grown up alongside the tech boom. From
                             Kindergarten; playing pixelated games on my Mom's 1st Gen iPod Mini, to Sixth Grade; unboxing the iPod Touch. Being able to experience and learn
                             in a <span className="font-header -mx-1 text-accent">significant period of hardware evolution</span> is no doubt, the basis for my relationship with one's and zero's.
@@ -99,7 +99,7 @@ export default function About() {
                     }
 
                     {AboutIndex === 2 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             There was always a voice in my head that told me <span className="font-header -mx-1 text-accent">software development is my passion</span>. From an introduction to command line control setting up Minecraft Servers
                             in midddle school to building out Shopify stores later in High School. I decided, however, to pursue a business degree. It was what succesful people in
                             my life had. I figured, as a direct admit to the Henry B. Tippie College of Business, declaring Marketing Analytics as my major would expose
@@ -113,7 +113,7 @@ export default function About() {
                     }
 
                     {AboutIndex === 3 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             Coming back to Des Moines, I was fortunate to recieve a managerial position at a popular local restaurant. Taking on a <span className="font-header -mx-1 text-accent">leadership role</span> would lay a seed 
                             that grew my work ethic. I was able to learn a lot about myself, and others through this opportunity. Managing a kitchen staff composed of
                             primarily immigrants who would work two jobs, 8:00AM-8:00PM, six days a week, <span className="font-header -mx-1 text-accent">permanently changed my outlook on the world</span>. It's humbling
@@ -123,36 +123,36 @@ export default function About() {
                     }
 
                     {AboutIndex === 4 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
-                            In Des Moines, work primarily took up my time. I took a few classes at DMACC that revolved around <span className="font-header -mx-1 text-accent">technology</span>. An Intro to Photoshop class that refined
-                            my passion for Photoshops capabilities I had exercised since High School. An Intro to HTML/CSS class that taught barebones frontend design (some really
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                            In Des Moines, work primarily took up my time. I took a few classes at DMACC that revolved around <span className="font-header -mx-1 text-accent">technology</span>. An Intro to Photoshop class refined
+                            my passion for its capabilities I had exercised since High School. An Intro to HTML/CSS class taught barebones frontend design (some really
                             gross looking websites). And an Intro to Wordpress class that exposed me to the capabilities of a CMS beyond Shopify.
                         </p> : 
                         null
                     }
 
                     {AboutIndex === 5 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             I <span className="font-header -mx-1 text-accent">regretably</span> didn't maximize my pursuit of software development during this time. I was still beating myself up over not suceeding at University. The world was quickly
                             thrown a curveball in COVID-19. This time away from work, stuck inside, made me <span className="font-header -mx-1 text-accent">reflect</span>. I decided I wanted to go back to Iowa City that Fall,
-                            I didn't see many other ways forwards outside of college. Coeincedentally, the restaurant I work at had another one of it's three locations positioned 400 yards
+                            I didn't see many other ways forwards outside of college. Coincidentally, the restaurant I work at had another one of it's three locations positioned 400 yards
                             from University property.
                         </p> : 
                         null
                     }
 
                     {AboutIndex === 6 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             I ended up going to Kirkwood Community College for a year to take transferable business credits and earn my re-entry to the business school. I was re-admitted
                             in the Fall of 2021. This is the same time I met <span className="font-header -mx-1 text-accent">my girlfriend</span>, Brynn, my love and support system who cheers me on unconditionally. During the Spring semester, 
-                            while I was taking a Tippie class on the essentials of Microsoft Office. I used my time outside of class to learn how to create basic applications in Python via the Kivy framework. 
+                            while I was taking a Tippie class on the essentials of Microsoft Office, I used my time outside of class to learn how to create basic applications in Python via the Kivy framework. 
                             It <span className="font-header -mx-1 text-accent">re-sparked my interest in Tech</span> and resulted in me applying to some SE apprenticeship cohorts with Google, to no avail.
                         </p> : 
                         null
                     }
 
                     {AboutIndex === 7 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             That summer I weighed my options in college and <span className="font-header -mx-1 text-accent">pursuing a career in my passion of Tech</span>. Option one was change my major to computer science, effectively
                             restarting my college career as if the groundhog didn't see it's shadow. Option two was attend a coding bootcamp. Previously, I had weighed
                             this option. However, I drew the same conclusions as before, it was a diluted market, how could I trust the investment when I'm not sure if companies will?
@@ -162,7 +162,7 @@ export default function About() {
                     }
 
                     {AboutIndex === 8 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             I decided I was going to study for and complete my <span className="font-header -mx-1 text-accent">Salesforce Administrator Certification</span> instead of attending classes in the Fall. From there, per the certification
                             roadmap that Salesforce provides, I could follow up the certification with Application Builder, APEX Developer, and Javascript Developer certifications. My long term
                             fantasy in my mind was that I would get into tech by being a Salesforce Administrator, pivot to Salesforce Development, and then pivot out of Salesforce sometime in my
@@ -172,7 +172,7 @@ export default function About() {
                     }
 
                     {AboutIndex === 9 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             On Thanksgiving of that same year, I had the honor of meeting my girlfriend's uncle whom is a principle engineer at a company in Washington D.C. We ended up talking all
                             night, no one else was mildly interested in our tech jargon. I told him about my <span className="font-header -mx-1 text-accent">Salesforce plan</span> and let my endless curiosity flow as he patiently
                             answered all of my questions about web development. In the end, he challenged me: "You want to create, you get excited talking about development,
@@ -184,10 +184,10 @@ export default function About() {
                     }
 
                     {AboutIndex === 10 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             After perusing job boards for positions related to my Salesforce certification, I found that <span className="font-header -mx-1 text-accent">some positions entailed web development</span>, preffering
-                            a skillset of HTML/CSS/JavaScript. After being told I should learn these exact technologies, combined with seeing their value, I decided
-                            I was going to add these skills to my repotoire before hitting the job market. <span className="font-header -mx-1 text-accent">I went BIG</span>. I identified a problem present at the restaurant
+                            a skillset of HTML/CSS/JavaScript. After being told I should learn these exact technologies, and combined with seeing their value, I decided
+                            I was going to add these skills to my repotoire to land a job. <span className="font-header -mx-1 text-accent">I went BIG</span>. I identified a problem present at the restaurant
                             I currently worked at. I decided a Catering Order System, something that was being done virtually analogously, would give me an end goal wherein
                             I could learn along the way in pursuit of building out my vision. 
                         </p> : 
@@ -195,18 +195,19 @@ export default function About() {
                     }
 
                     {AboutIndex === 11 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             Immediately diving in, the initial stack was going to be comprised of HTML/CSS/JavaScript with Salesforce API as a backend. I quickly
                             found myself <span className="font-header -mx-1 text-accent">working harder for something than I ever had in my life</span>. I completely fell in love with the development process. Along the way,
                             I realized how creating a back-end beyond Salesforce was going to result in a much better product. I switched over to Firebase, building out a fully responsive,
                             multi-page, e-commerce style order system that accounts for custom specifications. Seeing I was capable of building something complex, that solves business
-                            problems and leverages web tech <span className="font-header -mx-1 text-accent">filled me with more purpose than I have ever felt in my life</span>. The rest is history.
+                            problems and leverages web tech <span className="font-header -mx-1 text-accent">filled me with more purpose than I have ever felt in my life</span>. From that point
+                            on, I've been on a runaway train through the world of web development, enjoying every step of the journey.
                         </p> : 
                         null
                     }
 
                     {AboutIndex === 12 ? 
-                        <p className="shadow-md py-4 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
+                        <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
                             While still currently managing at the local restaurant, virtually all of my free time is and has been spent on refining my <span className="font-header -mx-1 text-accent">knowledge and proficiencies</span> in
                             web development. It doesn't feel at all like work, I have truly found my passion. Being able to craft applications that others can
                             interact with is extremly fulfilling to me. With my girlfriend finishing up her degree at Iowa this summer, we're <span className="font-header -mx-1 text-accent">preparing to make a leap</span>. I am

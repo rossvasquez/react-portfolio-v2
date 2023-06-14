@@ -8,7 +8,7 @@ import Blurb from './blurb';
 function Landing() {
 
     const Background = () =>
-    <MouseParallaxChild factorX={-0.2} factorY={-0.2} className='absolute top-0 left-0'>
+    <MouseParallaxChild factorX={-0.2} factorY={-0.2} className='absolute top-40 left-0'>
         <img src={landingBack} className='w-screen scale-[500%] sm:scale-[300%] md:scale-[200%] lg:scale-150 z-10 opacity-10' />
     </MouseParallaxChild>
 
@@ -21,11 +21,11 @@ function Landing() {
 
     const MyImage = () =>
     <>
-    <MouseParallaxChild factorX={0.5} factorY={0.3} className='absolute bottom-4 right-10 md:right-4 lg:right-6 z-30'>
-        <img src={meBack} className='scale-[98%] w-[18rem] md:w-[28rem] 2xl:w-[32rem] z-30' />
+    <MouseParallaxChild factorX={0.5} factorY={0.3} className='absolute bottom-4 right-1 md:right-4 lg:right-6 z-30'>
+        <img src={meBack} className='scale-[98%] w-[24rem] md:w-[28rem] 2xl:w-[32rem] z-30' />
     </MouseParallaxChild>
-    <MouseParallaxChild factorX={1} factorY={0.6} className='absolute bottom-4 right-10 md:right-4 lg:right-6 z-40'>
-        <img src={me} className='w-[18rem] md:w-[28rem] 2xl:w-[32rem] z-50' />
+    <MouseParallaxChild factorX={1} factorY={0.6} className='absolute bottom-4 right-1 md:right-4 lg:right-6 z-40'>
+        <img src={me} className='w-[24rem] md:w-[28rem] 2xl:w-[32rem] z-50' />
     </MouseParallaxChild>
     </>
 

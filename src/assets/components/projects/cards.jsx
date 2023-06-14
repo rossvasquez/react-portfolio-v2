@@ -1,20 +1,39 @@
 import projectInfo from '../../info/projects'
 import { useState, useRef } from 'react'
+import qr from '../../static/qr.png'
 
 function Cards() {
 
     const [ ShowProject, setShowProject ] = useState(5)
+    const [ ShowQR, setShowQR ] = useState(false)
 
     const top = useRef(null);
+    const top2 = useRef(null);
 
     async function scrollNGo(i) {
+        setShowProject(i);
         const rect  = top.current.getBoundingClientRect()
         const newToppa = rect.top - 6
         window.scrollTo({ 
             top: window.scrollY + newToppa,
-            behavior: 'smooth' 
+            behavior: 'instant' 
         });
-        setShowProject(i);
+
+    }
+
+    async function scrollNGo2() {
+        const rect  = top2.current.getBoundingClientRect()
+        const newToppa = rect.top - 6
+        window.scrollTo({ 
+            top: window.scrollY + newToppa,
+            behavior: 'instant' 
+        });
+
+        if (ShowQR) {
+            setShowQR(false)
+        } else {
+            setShowQR(true)
+        }
 
     }
 
@@ -38,7 +57,7 @@ function Cards() {
                     )}
                 </div>
                 </div>
-                <div onClick={() => scrollNGo(i)} className='absolute bottom-0 w-full h-16 rounded-md bg-accent flex justify-center items-center text-2xl text-deep font-body font-light uppercase hover:cursor-pointer hover:border border-white'>learn more</div>
+                <div onClick={() => scrollNGo(i)} className='absolute bottom-0 w-full h-16 rounded-md bg-accent flex justify-center items-center text-[1.8rem] text-deep font-body font-light uppercase hover:cursor-pointer hover:text-[1.82rem] hover:text-shallowb transition-all duration-200 hover:border-2 border-white'>learn more</div>
             </div>
         </div>
 
@@ -94,8 +113,8 @@ function Cards() {
                 </span>
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
-                <a href='https://cute-faloodeh-6ba98e.netlify.app' target='_blank'><div className='w-full h-16 bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
-                <a href='https://github.com/rossvasquez/zmariks-site-redesign' target='_blank'><div className='w-full h-16 bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
+                <a href='https://cute-faloodeh-6ba98e.netlify.app' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
+                <a href='https://github.com/rossvasquez/zmariks-site-redesign' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
             </div>
             <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
@@ -124,8 +143,6 @@ function Cards() {
                 information at the transaction of most features to store data and make it viewable from the Admin Area. I also implemented the ability to create
                 blog posts that include images as well as hot links via LinkifyJS. EmailJS has provided the capability to send templated Email's to users, highlighted
                 in the donation section, where in conjuction with PDF-Lib; emails are sent with Reciepts of Charitable Donation in comliance with Federal Regulations.
-                <br></br><br></br>
-                
             </p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Result</p>
@@ -141,24 +158,64 @@ function Cards() {
                 </span>
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
-                <a href='https://www.michaelhenterfoundation.org' target='_blank'><div className='w-full h-16 bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
-                <a href='https://github.com/rossvasquez/mh-foundation-react' target='_blank'><div className='w-full h-16 bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
+                <a href='https://www.michaelhenterfoundation.org' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
+                <a href='https://github.com/rossvasquez/mh-foundation-react' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
             </div>
             <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
     </div>
 
     const Wallet = () =>
-    <div className='w-auto h-auto px-2'>
+    <div ref={top2} className='w-auto h-auto px-2'>
         <div className='relative w-full mx-auto h-auto bg-shallow rounded-lg p-4 sm:p-6 shadow-xl'>
+            {ShowQR ?
+            <>
             <p className='text-3xl w-3/5 sm:text-5xl uppercase pl-1 text-white font-body'>Mobile Coupon Wallet</p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Mission</p>
-            <p className='pl-1 font-body text-2xl text-white mt-1'>Create a kick ass website</p>
+            <p className='pl-1 font-body text-2xl text-white mt-1'>
+                This project was a Technical Evaluation for a start up. The task was to create a mobile coupon wallet that had authentication, animation, allowed
+                for the coupon to be used once, and was built using Nuxt3 and Tailwind/SASS. It was completed over four days.
+            </p>
+            <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Stack</p>
-            <p className='pl-1 font-body text-2xl text-white mt-1'>Utilized React and Tailwind to build the application. Hosted it on Netlify. Purchased Google Domain.</p>
-            <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Solution</p>
+            <p className='pl-1 font-body text-2xl text-white mt-1'>
+                It was my first time using Vue or Nuxt, I enjoyed the experience of using a framework outside of React. It was also my first time using SCSS which worked well with animation. I utilized Font Awesome to source
+                icons per the project requirements. I used Midjourney to render stock photography on the coupons. I created tables in Supabase to store business/coupon data as well as access user info relationally. Supabase Auth allowed me to 
+                create easy login/log out functionality as well as protection from unauthorized pages/data.
+                
+            </p>
+            <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
+            <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Result</p>
+            <p className='pl-1 font-body text-2xl text-white mt-1'>
+                The result was a project that meets requirements and one that I am proud of. It works well on mobile and can be used on desktop if necessary. It provides account control in an intuitive interface. Coupons are straightforward
+                and dummy QR codes represent real use cases. The animation features of the wallet work well, achieving my initial vision. It was definetly inspired by the Apple Wallet, which I regard as having one of the cleanest UX's
+                in the mobile wallet space.
+                <br></br><br></br>
+                <p className='font-header text-white text-opacity-40 uppercase'>Account Info</p>
+                <p className='font-header mb-3 mt-1 text-xl'>tiger@gmail.com<br></br>Gr33nJ@cket</p>
+                <p className='font-header my-3 text-xl'>mj23@jumpman.air<br></br>Car0linaBlue!</p>
+                <p className='font-header my-3 text-xl'>roger.waters@gmail.com<br></br>Pri$m123</p>
+            </p>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
+                <div onClick={() => scrollNGo2()} className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div>
+                <a href='https://github.com/rossvasquez/mh-foundation-react' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
+            </div>
+
             <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
+            </>
+            :
+            <div className='flex items-center justify-center bg-shallow rounded-lg top-0 left-0 z-50 w-full h-full'>
+                <div className='relative flex justify-center items-center flex-col w-screen max-w-md mx-auto h-auto'>
+                    <p className='text-3xl w-full mt-4 text-white font-body text-center leading-relaxed'>Scan on mobile device for the best experience</p>
+                    <div className='flex items-center justify-center w-full px-4 h-auto pt-4 pb-[.2rem] mt-8 rounded-md bg-deep shadow-inner'>
+                        <img className='w-full' src={qr} />
+                    </div>
+                    <p className='text-2xl w-full mt-3 text-white font-body text-center'>or click <a href='https://nuxtwallet.netlify.app' target='_blank' className='text-accent hover:opacity-80 underline'>here</a>.</p>
+                    <div onClick={() => scrollNGo2()} className='h-16 w-7/12 mt-12 mb-4 mx-auto bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>close</div>
+                </div>
+            </div>
+            }
         </div>
     </div>
 
@@ -168,10 +225,41 @@ function Cards() {
             <p className='text-3xl w-3/5 sm:text-5xl uppercase pl-1 text-white font-body'>Catering Order System</p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Mission</p>
-            <p className='pl-1 font-body text-2xl text-white mt-1'>Create a kick ass website</p>
+            <p className='pl-1 font-body text-2xl text-white mt-1'>
+                After losing a longtime friend and teammate to Marfan Syndrome I saw an opportunity
+                to both relieve some of the stress of those grieveing and put my passion/skills into something real. The family
+                wanted a foundation site that serves as a place to stay up to date on foundation news, shop for foundation products,
+                view foundation events, and have donation capabilties.
+            </p>
+            <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Stack</p>
-            <p className='pl-1 font-body text-2xl text-white mt-1'>Utilized React and Tailwind to build the application. Hosted it on Netlify. Purchased Google Domain.</p>
-            <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Solution</p>
+            <p className='pl-1 font-body text-2xl text-white mt-1'>
+                The foundation site utilizes React and Tailwind on the frontend. I am using React Router with Netlify redirects to
+                simulate traditional multi-page functionality. Utilizing Supabase, I have created various PostgreSQL tables for data storage
+                as well as buckets for image storage. Employing the API offerings of Printify, PayPal, EmailJS, and Eventbrite I have been able meet
+                project requirements. Since Supabase offers RLS, I call on it directly from the client with useEffect. To safely use the other API integrations,
+                I have created Netlify Functions (AWS Lambda) with NodeJS to gather data and then hit the endpoints from the client. Utilzing supabase I have captured
+                information at the transaction of most features to store data and make it viewable from the Admin Area. I also implemented the ability to create
+                blog posts that include images as well as hot links via LinkifyJS. EmailJS has provided the capability to send templated Email's to users, highlighted
+                in the donation section, where in conjuction with PDF-Lib; emails are sent with Reciepts of Charitable Donation in comliance with Federal Regulations.       
+            </p>
+            <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
+            <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Result</p>
+            <p className='pl-1 font-body text-2xl text-white mt-1'>
+                <span>
+                    The site hits all of the requirements. Currently it is password protected (mhf2023$) and without PayPal so features can be tested. I think
+                    the coolest feature is the donation flow and the email/recepit generation from user info.
+                    I am currently resolving some API issues with Printify relating to the abilities of their Web Front to publish products. They make it
+                    so that if you GET product data and POST orders via API (using PayPal to capture payment), you revoke the ability to publish products
+                    from Prinify's Web Front Catalog, they get stuck with status publishing, yet are still readable via API. Rather than re-build Printify in the Admin Area via endpoints, I believe
+                    I have procurred a solution. I will create a Lambda that triggers when products are added, checks product status, pulls product info if status is publishing,
+                    and finally uses the publish endpoint. Why, why can't their publish button just do this? Ah well, guess that's how it goes in this realm. 
+                </span>
+            </p>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
+                <a href='https://www.michaelhenterfoundation.org' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
+                <a href='https://github.com/rossvasquez/mh-foundation-react' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
+            </div>
             <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
     </div>
