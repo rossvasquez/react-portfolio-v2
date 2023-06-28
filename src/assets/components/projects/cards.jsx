@@ -148,11 +148,11 @@ function Cards() {
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Result</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
                 <span>
-                    The site hits all of the requirements. Currently it is password protected (mhf2023$) and without PayPal so features can be tested. I think
-                    the coolest feature is the donation flow and the email/recepit generation from user info.
+                    The site hits all of the requirements. I think
+                    the coolest feature is the donation flow and the email/receipt generation from user info.
                     I am currently resolving some API issues with Printify relating to the abilities of their Web Front to publish products. They make it
                     so that if you GET product data and POST orders via API (using PayPal to capture payment), you revoke the ability to publish products
-                    from Prinify's Web Front Catalog, they get stuck with status publishing, yet are still readable via API. Rather than re-build Printify in the Admin Area via endpoints, I believe
+                    from Prinify's Web Front Catalog, they get stuck with status publishing, yet are still fetchable via API. Rather than re-build Printify in the Admin Area via endpoints, I believe
                     I have procurred a solution. I will create a Lambda that triggers when products are added, checks product status, pulls product info if status is publishing,
                     and finally uses the publish endpoint. Why, why can't their publish button just do this? Ah well, guess that's how it goes in this realm. 
                 </span>
@@ -168,7 +168,7 @@ function Cards() {
     const Wallet = () =>
     <div ref={top2} className='w-auto h-auto px-2'>
         <div className='relative w-full mx-auto h-auto bg-shallow rounded-lg p-4 sm:p-6 shadow-xl'>
-            {ShowQR ?
+            {!ShowQR ?
             <>
             <p className='text-3xl w-3/5 sm:text-5xl uppercase pl-1 text-white font-body'>Mobile Coupon Wallet</p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
@@ -241,7 +241,7 @@ function Cards() {
             <p className='pl-1 font-body text-2xl text-white mt-1'>
                 To properly learn, I took on this project with only HTML, CSS, and Vanilla Javascript. It utilizes localStorage to track user information
                 through the cart and checkout process. Firebase Realtime Database stores data on order completion where it is viewable from an admin dashboard. I wrote
-                a boatload of CSS making this responsive as well as building out all of the components, having now used Tailwind, it is tough to look back on.       
+                a boatload of CSS making this responsive as well as building out all of the components, having now used Tailwind, it is tough to look back on.        
             </p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Result</p>

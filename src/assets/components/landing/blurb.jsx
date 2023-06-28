@@ -25,7 +25,7 @@ export default function Blurb() {
     </div>
 
     const NameOcc = () =>
-    <div className='mt-[10%] md:mt-4'>
+    <div className='mt-[6%] md:mt-4'>
     <h1 className='relative z-50 font-header w-full md:text-left text-center text-6xl md:text-8xl lg:text-9xl font-bold uppercase text-accent shadowTitleSmall md:shadowTitle mt-2 md:mt-0.5'>Ross Vasquez</h1>
     <h2 className="relative w-full md:text-left text-center z-50 font-header font-sans text-2xl xs:text-3xl md:text-5xl mt-2 sm:mt-1 font-semibold text-white tracking-wider uppercase shadowJobSmall md:shadowJob">Software Developer</h2>
     </div>
