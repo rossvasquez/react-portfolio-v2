@@ -199,7 +199,7 @@ function Cards() {
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
                 <div onClick={() => scrollNGo2()} className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div>
-                <a href='https://github.com/rossvasquez/mh-foundation-react' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
+                <a href='https://github.com/rossvasquez/coupon-wallet-eval' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
             </div>
 
             <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
@@ -254,8 +254,8 @@ function Cards() {
                 good real world practice.
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
-                <a href='https://www.michaelhenterfoundation.org' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
-                <a href='https://github.com/rossvasquez/mh-foundation-react' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
+                <a href='https://catering-order-system-2ae86.web.app/' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
+                <a href='https://github.com/rossvasquez/ecommerce-restaurant-app' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
             </div>
             <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
