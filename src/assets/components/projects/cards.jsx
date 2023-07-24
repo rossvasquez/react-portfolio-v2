@@ -68,53 +68,35 @@ function Cards() {
         <MappedProj />
     </div>
 
-    const Zmariks = () =>
+    const TwoHouses = () =>
     <div className='w-auto h-auto px-2'>
         <div className='relative w-full mx-auto h-auto bg-shallow rounded-lg p-4 sm:p-6 shadow-xl'>
-            <p className='text-3xl w-3/5 sm:text-5xl uppercase pl-1 text-white font-body'>Restaurant Site Remodel</p>
+            <p className='text-3xl w-3/5 sm:text-5xl uppercase pl-1 text-white font-body'>SaaS Landing Page</p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Mission</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                Upon bringing my catering order application to the attention of my employer, it was well recieved.
-                However, while the application would be a great addition to business processes, ownership felt a better initial step
-                would be first re-designing their website as a whole. Their current website uses a CMS that hasn't recieved support 
-                since 2011. They don't have an SSL certificate on the domain, which after recently upgrading their email
-                server, doesn't integrate. My mission is to create a modern site that makes customers think less and do more. Once
-                the site is completed, I plan to re-write the catering order system into the more modern design.
+                After working in the restaurant industry for over five years I was able to identify some pain points
+                that existed in various processes. One of these was employee managemnt. There are management services that exist but I believe they don't
+                encompass as much as they should. My goal is to make a comprehensive web app that allows for a central employee portal, compatible with all
+                restaurants, and scalable in a franchise environment. The first step is generating interest and gathering feedback to better
+                understand customers.
             </p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Stack</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                I am utilizng React to write the Front-End. I use React Router with Netlify redirects to
-                make the SPA feel natural for users. Common hooks implented in this project are useState, useContext, and useEffect.
-                For styling, I am using Tailwind. I am currently using Netlify forms to capture all of the necessary data from the contact page. 
-                At the advent of the catering portion, I will have to implent a Supabase DB. Third-party applications that are redirected to
-                via user-flows handle most of the data necessary for the Restaurant (Delivery Services, ToastPOS, embedded Google Maps) 
+                I am utilizng React to write the Front-End. For styling, I am using Tailwind. The Noun Project and Midjourney are my source of assets.
+                EmailJS allows me to write an HTML/CSS email that can be triggered from events on the Front-End. Supabase stores entered addresses to harbor
+                a list for future communications. Mailchimp is where the survey and associated data is hosted
             </p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Result</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                <span>
-                    The site gives a much more modern feel that is better optimized for mobile as well as general use. Previously, ordering pickup or catering
-                    brought users to genralized web locations where users still had to refine pages to their preffered location and service. With the new order
-                    functionality, users can follow an easy flow that sends them directly to what they desire.
-                </span>
-                <br></br><br></br>
-                <span>
-                    The rewards section of the site is much more personal, it now provides clear information regarding the rewards system as well
-                    as clear action buttons that allow users to focus on their goal rather than focusing on where they need to go to do that.
-                </span>
-                <br></br><br></br>
-                <span>
-                    The locations section of the site provides intuitive direction, whether being able to click the phone numbers from mobile
-                    to immediately call the store. Or the intuitive maps feature that opens a Google Map embed that immediately provides the user
-                    both the address and the ability to see what it is near. On mobile users can immediately open directions in the Google Maps
-                    app.
-                </span>
+                I believe the site does well to attract, inform, and convert. I am slowly bringing exposure to it's existence. I am planning a cold outreach
+                via Mailchimp campaign and Twitter DMs/Ads.
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
-                <a href='https://cute-faloodeh-6ba98e.netlify.app' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
-                <a href='https://github.com/rossvasquez/zmariks-site-redesign' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
+                <a href='https://2houses.netlify.app' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
+                <a href='https://github.com/rossvasquez/2Houses' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
             </div>
             <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>
@@ -265,7 +247,7 @@ function Cards() {
     return(
         <>
         {ShowProject === 5 ? <AllProj /> : null}
-        {ShowProject === 0 ? <Zmariks /> : null}
+        {ShowProject === 0 ? <TwoHouses /> : null}
         {ShowProject === 1 ? <Hent /> : null}
         {ShowProject === 2 ? <Wallet /> : null}
         {ShowProject === 3 ? <Catering /> : null}

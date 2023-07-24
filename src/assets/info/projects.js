@@ -2,6 +2,7 @@ import walletEval from '../static/walletEval.png'
 import cateringOrderSystem from '../static/cateringOrderSystem.png'
 import foundation from '../static/foundation.png'
 import zmariks from '../static/zmariks.png'
+import twoHouses from '../static/twoHouses.png'
 import html from '../static/html.png'
 import javascript from '../static/javascript.png'
 import cssLogo from '../static/cssLogo.png'
@@ -28,9 +29,9 @@ import photoshopLogo from '../static/photoshopLogo.png'
 const projectInfo = [
 
     {
-        name: "Restaurant Site Remodel",
-        description: "Currently developing a new website for a local business, features modern user flows for ordering, locating restaurants, and interacting with rewards.",
-        image: zmariks,
+        name: "SaaS Landing Page",
+        description: "I am currently gauging interest in a restaurant management software that I am developing. The purpose of this landing page is to inform as well as gather email addresses to trigger a flow that ends with a survey to better understand my customers needs.",
+        image: twoHouses,
         tech: [
             {
                 logo: javascript,
@@ -49,6 +50,14 @@ const projectInfo = [
                 name: 'Netlify'
             },
             {
+                logo: supabaseLogo,
+                name: 'Supabase'
+            },
+            {
+                logo: emailLogo,
+                name: 'EmailJS'
+            },
+            {
                 logo: midjourneyLogo,
                 name: 'Midjourney'
             },
@@ -58,6 +67,37 @@ const projectInfo = [
             }
         ]
     },
+    // {
+    //     name: "Restaurant Site Remodel",
+    //     description: "Currently developing a new website for a local business, features modern user flows for ordering, locating restaurants, and interacting with rewards.",
+    //     image: zmariks,
+    //     tech: [
+    //         {
+    //             logo: javascript,
+    //             name: 'JavaScript'
+    //         },
+    //         {
+    //             logo: reactLogo,
+    //             name: 'ReactJS'
+    //         },
+    //         {
+    //             logo: tailwindLogo,
+    //             name: 'Tailwind'
+    //         },
+    //         {
+    //             logo: netlifyLogo,
+    //             name: 'Netlify'
+    //         },
+    //         {
+    //             logo: midjourneyLogo,
+    //             name: 'Midjourney'
+    //         },
+    //         {
+    //             logo: photoshopLogo,
+    //             name: 'Photoshop'
+    //         }
+    //     ]
+    // },
     {
         name: "Foundation Site",
         description: "Designed, developed, and managed data(sales channels, events, payment, email, database, dashboards) for a foundation supporting a late friend.",

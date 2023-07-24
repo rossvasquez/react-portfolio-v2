@@ -79,12 +79,11 @@ export default function About() {
                 <div ref={topOfCard} className="relative h-auto w-full bg-shallow shadow-lg rounded-lg pb-[7.8rem] pt-2 md:pt-6 px-2 md:px-6">
                     {AboutIndex === 0 ? 
                         <p className="shadow-md py-2 px-4 md:px-8 -mb-[7.2rem] md:-mb-[6.2rem] rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
-                            Software Developer currently residing in Iowa City, IA. I am a <span className="font-header -mx-1 text-accent">passionate problem solver</span> who enjoys leveraging web
-                            technology to create user experiences that make life easier. I am a Certified Salesforce Administrator whose interest in
+                            Software Developer currently residing in Des Moines, IA. I am a <span className="font-header -mx-1 text-accent">passionate problem solver</span> who leverages web
+                            technology to create user experiences that make life easier. More specifically I enjoy using React, Tailwind, and Serverless Functions to make projects come to life. I am a Certified Salesforce Administrator whose interest in
                             Salesforce-to-Web led to me finding my purpose in <span className="font-header -mx-1 text-accent">Web Development</span>. I previously attended The Tippie College of Business, studying Marketing
-                            Analytics before deciding to instead pursue a career in tech. When I'm not working as a manager at the local restaurant I've
-                            been with for almost five years, I'm either coding or spending time with <span className="font-header -mx-1 text-accent">my girlfriend</span>. I've enjoyed <span className="font-header -mx-1 text-accent">Golf</span> my whole life and love
-                            to play pick-up basektball.
+                            Analytics before deciding to instead pursue a career in tech. I spend most of my time developing web apps or hanging out with my girlfriend. I've enjoyed <span className="font-header -mx-1 text-accent">Golf</span> my whole life and love
+                            to play pick-up <span className="font-header -mx-1 text-accent">basektball</span>.
                         </p> : 
                         null
                     }
