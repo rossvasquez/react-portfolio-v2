@@ -30,6 +30,7 @@ function Landing() {
     </>
 
     return (
+        <>
         <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} resetOnLeave={true} className='relative h-auto w-screen'>
             <div className="relative p-2 md:p-4 h-auto min-h-[800px] w-screen bg-gradient-to-bl from-deep via-shallow to-shallow">
                 <Background />
@@ -40,6 +41,7 @@ function Landing() {
                 </div>
             </div>
         </MouseParallaxContainer>
+        </>
     )
 }
 
