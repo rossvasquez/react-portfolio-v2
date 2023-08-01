@@ -1,11 +1,9 @@
 @keyframes moveDown {
     0% {
-        top: -100vw;
-        opacity: 0;
+        top: -200vw;
     }
     100% {
         top: 1vw;
-        opacity: 1;
     }
 }
 
@@ -23,7 +21,7 @@
 }
 
 .fadeIn {
-    animation: appear 2s forwards;
+    animation: appear 1s forwards;
 }
 
 @keyframes disappear {
