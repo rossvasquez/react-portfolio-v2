@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   const EmailPopUp = () =>
-    <div className={`fixed z-[70] left-[1vw] top-[1vw] w-[98vw] h-auto bg-white rounded-md overflow-hidden ${PopUpClosed ? 'fadeOut' : 'slideIn'}`}>
+    <div className={`fixed z-[70] left-[1vw] top-[1vw] w-[98vw] h-auto bg-white rounded-md overflow-hidden ${PopUpClosed ? 'hidden' : 'slideIn'}`}>
         <div className='flex items-center font-header text-deep text-3xl py-3 w-full bg-accent shadow-sm'>
           <p className='w-full px-4 md:text-center'>Important Notice</p>
           <div onClick={() => setPopUpClosed(true)} className='absolute right-4 h-10 w-10 bg-deep text-lg text-white bg-opacity-100 hover:cursor-pointer hover:bg-opacity-90 rounded-full flex justify-center items-center'>X</div>
@@ -31,7 +31,7 @@ function App() {
     </div>
 
   const BackgroundBlur = () =>
-  <div ref={BackgroundRef} className={`opacity-80 absolute top-0 left-0 w-screen bg-deep z-[60] ${PopUpClosed ? 'fadeOut' : 'fadeIn'}`} />
+  <div ref={BackgroundRef} className={`opacity-80 absolute top-0 left-0 w-screen bg-deep z-[60] ${PopUpClosed ? 'hidden' : 'fadeIn'}`} />
 
   return (
     <>
