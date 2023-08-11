@@ -41,7 +41,7 @@ function Cards() {
     projectInfo.map((item, i) => 
         <div key={i} className='flex flex-col p-3 md:p-4 justify-center items-center h-auto w-auto rounded-md shadow-md bg-shallow hover:shadow-xl'>
             <div className='relative h-full w-full pb-14'>
-                <img className='h-auto w-full rounded-md mb-3 md:mb-4' src={item.image} />
+                <img className='h-auto w-auto rounded-md mb-3 md:mb-4 max-h-[27.7rem] mx-auto' src={item.image} />
                 <div className='h-auto w-auto bg-deep rounded-lg shadow-inner'>
                     <p className='px-4 w-full text-center pt-4 text-4xl text-white uppercase font-body font-semibold tracking-wide'>{item.name}</p>
                     <div className='h-[.05rem] bg-accent mt-4 opacity-80'></div>
@@ -71,32 +71,28 @@ function Cards() {
     const TwoHouses = () =>
     <div className='w-auto h-auto px-2'>
         <div className='relative w-full mx-auto h-auto bg-shallow rounded-lg p-4 sm:p-6 shadow-xl'>
-            <p className='text-3xl w-3/5 sm:text-5xl uppercase pl-1 text-white font-body'>SaaS Landing Page</p>
+            <p className='text-3xl w-3/5 sm:text-5xl uppercase pl-1 text-white font-body'>State Fairdle</p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Mission</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                After working in the restaurant industry for over five years I was able to identify some pain points
-                that existed in various processes. One of these was employee managemnt. There are management services that exist but I believe they don't
-                encompass as much as they should. My goal is to make a comprehensive web app that allows for a central employee portal, compatible with all
-                restaurants, and scalable in a franchise environment. The first step is generating interest and gathering feedback to better
-                understand customers.
+                To recreate Wordle with a State Fair theme. This meant coming up with my own version of the various algorithms that power Wordle as well as various other features.
             </p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Stack</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                I am utilizng React to write the Front-End. For styling, I am using Tailwind. The Noun Project and Midjourney are my source of assets.
-                EmailJS allows me to write an HTML/CSS email that can be triggered from events on the Front-End. Supabase stores entered addresses to harbor
-                a list for future communications. Mailchimp is where the survey and associated data is hosted
+                My own comfy version of JAM. I used ReactJS with JSX and Tailwind for styling. For backend I used Supabase PostgreSQL API and an API that checks if the word is real that is powered by Netlify Lambdas.
+                Midjourney helped me create the header image (or did I help it?). Photoshop was used to for asset creation as well as getting them ready for the web.
             </p>
             <div className='mt-6 w-full h-[.05rem] bg-accent opacity-60' />
             <p className='mt-4 text-white text-opacity-40 text-4xl uppercase font-header pl-1'>Result</p>
             <p className='pl-1 font-body text-2xl text-white mt-1'>
-                I believe the site does well to attract, inform, and convert. I am slowly bringing exposure to it's existence. I am planning a cold outreach
-                via Mailchimp campaign and Twitter DMs/Ads.
+                I sucessfully recreated the various features that go into Wordle. Supabase API allows the correct word for each day to be brought into the application. I utilized localStorage to save peoples guesses if they
+                left and came back mid game. I added the ability to copy and paste your results in a similiar fashion to Wordle. I also created a dashboard that communicates with Supabase to give an overview of each day and how many
+                guesses it took everyone who played.
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full'>
-                <a href='https://2houses.netlify.app' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
-                <a href='https://github.com/rossvasquez/2Houses' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
+                <a href='https://statefairdle.com' target='_blank'><div className='w-full h-[4.5rem] bg-accent hover:cursor-pointer hover:border-2 hover:border-white rounded-md flex justify-center items-center font-body text-shallow text-3xl uppercase'>Live Site</div></a>
+                <a href='https://github.com/rossvasquez/fairdle' target='_blank'><div className='w-full h-[4.5rem] bg-shallow border-2 border-accent rounded-md flex justify-center items-center font-body text-white text-3xl uppercase hover:text-accent hover:cursor-pointer hover:border-none hover:bg-opacity-80 hover:bg-deep'>Repository</div></a>
             </div>
             <div onClick={() => setShowProject(5)} className='absolute right-5 sm:right-7 top-5 w-24 hover:opacity-80 h-14 rounded-md hover:cursor-pointer bg-accent uppercase font-light text-deep text-xl flex justify-center items-center font-body'>Back</div>
         </div>

@@ -2,6 +2,7 @@ import walletEval from '../static/walletEval.png'
 import cateringOrderSystem from '../static/cateringOrderSystem.png'
 import foundation from '../static/foundation.png'
 import zmariks from '../static/zmariks.png'
+import mockUpIPHONE from '../static/mockUpIPHONE.png'
 import twoHouses from '../static/twoHouses.png'
 import html from '../static/html.png'
 import javascript from '../static/javascript.png'
@@ -29,9 +30,9 @@ import photoshopLogo from '../static/photoshopLogo.png'
 const projectInfo = [
 
     {
-        name: "SaaS Landing Page",
-        description: "I am currently gauging interest in a restaurant management software that I am developing. The purpose of this landing page is to inform as well as gather email addresses to trigger a flow that ends with a survey to better understand my customers needs.",
-        image: twoHouses,
+        name: "State Fairdle",
+        description: "In the spirit of the Iowa State Fair, as well as the fact that my family are Wordle regulars, I created a State Fairdle web app that emulates the original.",
+        image: mockUpIPHONE,
         tech: [
             {
                 logo: javascript,
@@ -50,12 +51,16 @@ const projectInfo = [
                 name: 'Netlify'
             },
             {
+                logo: nodeLogo,
+                name: 'NodeJS'
+            },
+            {
                 logo: supabaseLogo,
                 name: 'Supabase'
             },
             {
-                logo: emailLogo,
-                name: 'EmailJS'
+                logo: paypalLogo,
+                name: 'PayPal'
             },
             {
                 logo: midjourneyLogo,
