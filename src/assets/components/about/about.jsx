@@ -207,10 +207,10 @@ export default function About() {
 
                     {AboutIndex === 12 ? 
                         <p className="shadow-md py-2 px-4 md:px-8 rounded-md bg-deep bg-opacity-40 leading-loose md:leading-[3.2rem] text-2xl md:text-3xl font-body text-white text-left">
-                            While still currently managing at the local restaurant, virtually all of my free time is and has been spent on refining my <span className="font-header -mx-1 text-accent">knowledge and proficiencies</span> in
+                            Virtually all of my free time is and has been spent on refining my <span className="font-header -mx-1 text-accent">knowledge and proficiencies</span> in
                             web development. It doesn't feel at all like work, I have truly found my passion. Being able to craft applications that others can
-                            interact with is extremly fulfilling to me. With my girlfriend finishing up her degree at Iowa this summer, we're <span className="font-header -mx-1 text-accent">preparing to make a leap</span>. I am
-                            also prepared to make my own leap, transferring the time and energy I put into my current role at the restaurant, to instead practice my passion profesionally. 
+                            interact with is extremly fulfilling to me. With my girlfriend finishing up her degree at Iowa, we're <span className="font-header -mx-1 text-accent">preparing to make a leap</span>. I am
+                            also prepared to make my own leap, transferring the time and energy I put into my projects, to instead practice my passion profesionally. 
                             Feeling better than ever, 
                             {Fade ?
                             <span className="font-header -mx-1 text-accent tranistion-opacity ease-in duration-300 opacity-100"> I am ready to take on the challenges of a full-time position.</span>

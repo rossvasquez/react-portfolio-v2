@@ -1,0 +1,205 @@
+{
+  "selectedTemplate": 1,
+  "headings": {
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "awards": "Accomplishments",
+    "work": "Work Experience"
+  },
+  "basics": {
+    "name": "Thomas Ross Vasquez",
+    "email": "thomasross.vasquez@gmail.com",
+    "website": "rossvasquez.me",
+    "location": {
+      "address": "Urbandale, IA"
+    },
+    "phone": "+1 (515) 707-6811"
+  },
+  "education": [
+    {
+      "institution": "University of Iowa Henry B. Tippie College of Business",
+      "location": "Iowa City, IA",
+      "area": "Marketing Analytics - Partial Completion",
+      "studyType": "B.B.A.",
+      "startDate": "August 2017 to May 2018",
+      "endDate": "August 2021 to May 2022",
+      "gpa": ""
+    },
+    {
+      "institution": "Waukee High School",
+      "location": "Waukee, Iowa",
+      "studyType": "High School Diploma",
+      "endDate": "May 2017",
+      "startDate": "August 2013"
+    }
+  ],
+  "work": [
+    {
+      "highlights": [
+        "Identified business problems that could be solved through software development.",
+        "Spearheaded the development of an online ordering capability for unique catering cases.",
+        "Created foundation site for late friend pro bono."
+      ],
+      "company": "Self-Employed",
+      "position": "Full-Stack Developer",
+      "location": "Des Moines, IA",
+      "startDate": "January 2023",
+      "endDate": "Present"
+    },
+    {
+      "website": "",
+      "endDate": "Present",
+      "highlights": [
+        "Maintain the utmost professionalism towards members.",
+        "Coordinate with clubhouse staff to fulfill member requests.",
+        "Use lifelong golf experience to assist members in golf related knowledge."
+      ],
+      "company": "The Harvester",
+      "position": "Caddy",
+      "location": "Rhodes, IA",
+      "startDate": "August 2023"
+    },
+    {
+      "highlights": [
+        "Assisted customers by helping in the decision making process as well as resolving issues.",
+        "Oversaw employee responsibilities, leading by example and setting standards.",
+        "Performed closing duties; counted drawers, completed bank deposits and sales reports, ensured expectations were met."
+      ],
+      "company": "Z'Mariks Noodle Cafe",
+      "position": "Manager",
+      "location": "Des Moines, IA - Iowa City, IA",
+      "startDate": "January 2019",
+      "endDate": "June 2023"
+    },
+    {
+      "highlights": [
+        "Applied marketing and design knowledge to assist realtors.",
+        "Created various static/dynamic digital marketing assets for social media, e-mail, and messaging.",
+        "Created print marketing assets that followed various postal guidelines."
+      ],
+      "company": "Keller Williams Real Estate Team",
+      "position": "Marketing Design Lead",
+      "location": "Des Moines, IA",
+      "startDate": "December 2017",
+      "endDate": "January 2021"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front-End",
+      "level": "",
+      "keywords": [
+        "HTML, JSX, Javascript, React(Next), Vue(Nuxt3), CSS, TailwindCSS, SASS, MUI, Parallax"
+      ]
+    },
+    {
+      "keywords": [
+        " NodeJS, Serverless Functions, API, JSON, PostgreSQL"
+      ],
+      "name": "Back-End"
+    },
+    {
+      "keywords": [
+        "Supabase, Firebase, Photoshop, Midjourney, Noun, Font Awesome, Google Fonts"
+      ],
+      "name": "Services"
+    },
+    {
+      "keywords": [
+        " Netlify, Vercel, GitHub, Git Bash, VSCode"
+      ],
+      "name": "DevOps"
+    },
+    {
+      "keywords": [
+        "Certified Salesforce Administrator"
+      ],
+      "name": "CRM"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": [
+        "React",
+        "TailwindCSS",
+        "PostgreSQL",
+        "NodeJS",
+        "API"
+      ],
+      "url": "statefairdle.com",
+      "name": "\"State Fairdle\" (Wordle Recreation)",
+      "description": "A game I built for the Supabase Launch Week 8 Hackathon in light of the Iowa State Fair."
+    },
+    {
+      "keywords": [
+        "JavaScript",
+        "React",
+        "TailwindCSS",
+        "PostgreSQL",
+        "NodeJS",
+        "API"
+      ],
+      "name": "Foundation Site",
+      "description": "A web app that features events, a shop, donations, as well as an admin area.",
+      "url": "michaelhenterfoundation.org"
+    },
+    {
+      "keywords": [
+        "Nuxt3",
+        "JavaScript",
+        "TailwindCSS",
+        "SASS",
+        "PostgreSQL"
+      ],
+      "name": "Mobile Coupon Wallet",
+      "description": "Mobile coupon wallet with authentication and intuitive UI. Log in details on portfolio site.",
+      "url": "nuxtwallet.netlify.app"
+    },
+    {
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Firebase",
+        "API"
+      ],
+      "name": "Catering Order System",
+      "description": "An e-commerce style application that solves business issues for Z'Mariks.",
+      "url": "catering-order-system-2ae86.web.app"
+    },
+    {
+      "keywords": [
+        "JavaScript",
+        "React",
+        "TailwindCSS",
+        "Parallax"
+      ],
+      "name": "Portfolio",
+      "url": "rossvasquez.me"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Certified Salesforce Administrator",
+      "date": "December 2022",
+      "awarder": "Salesforce",
+      "summary": "Passed certification in-person on first attempt after studying for three months."
+    },
+    {
+      "title": "State Champion High School Golfer",
+      "date": "October 2015",
+      "awarder": "IHSAA",
+      "summary": "Contributing team member of 2015 Iowa High School 4A Golf State Championship"
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
