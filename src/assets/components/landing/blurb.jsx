@@ -8,7 +8,7 @@ export default function Blurb() {
     <div className='flex top-4 md:relative md:flex flex-col-reverse lg:ml-3 md:max-w-none max-w-lg w-full md:flex-row mb-2 md:mb-0'>
         <div className='flex flex-row'>
             <a href={CV} target="_blank" className='rounded-full hover:shadow-md w-full md:w-60 h-12 bg-deep bg-opacity-80 hover:bg-opacity-100 uppercase font-body text-lg md:text-2xl font-light text-accent flex justify-center items-center hover:cursor-pointer'>resume</a>
-            <a href="mailto:ross.vasquez.17@gmail.com" className='rounded-full hover:shadow-md w-full md:w-60 h-12 bg-transparent ml-2 md:ml-4 hover:bg-white hover:bg-opacity-20 border-white border-opacity-40 border-2 uppercase font-body text-lg md:text-2xl font-light text-white flex justify-center items-center hover:cursor-pointer'>email me</a>
+            <a href="mailto:thomasross.vasquez@gmail.com" className='rounded-full hover:shadow-md w-full md:w-60 h-12 bg-transparent ml-2 md:ml-4 hover:bg-white hover:bg-opacity-20 border-white border-opacity-40 border-2 uppercase font-body text-lg md:text-2xl font-light text-white flex justify-center items-center hover:cursor-pointer'>email me</a>
         </div>
         <div className='flex flex-row w-full mb-4 mt-2 md:mt-0 md:mb-0'>
 
